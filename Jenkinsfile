@@ -8,6 +8,8 @@ pipeline {
 					}
 			}
 			steps {
+				sh 'pwd'
+				sh 'ls -la'
 				sh 'python -m py_compile sources/add2vals.py sources/cals.py'
 			}
 		}
